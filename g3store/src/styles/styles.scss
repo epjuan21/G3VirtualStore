@@ -1,0 +1,196 @@
+$theme-colors: (
+  "primary":    #1196F5,
+  "secondary":  #807c7c,
+  "success":    #198754,
+  "info":       #0dcaf0,
+  "warning":    #ffc107,
+  "danger":     #dc3545,
+  "light":      #f8f9fa,
+  "dark":       #343a40,
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+$primary: #1196f5;
+$blanco: #fff;
+$negro: #000;
+$gris0: #F1F4F7;
+$gris1: #c4c4c4;
+$gris2: #807c7c;
+$gris3: #565555;
+$secundario: #0097a7;
+
+/* Estilos Generales */
+
+h1 {
+  color: $primary;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+hr {
+  border: 1px solid $gris1;
+}
+
+.btn-primary {
+  color: $blanco
+}
+
+.btn-primary:hover {
+    color: $blanco;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+/* Estilos Header */
+
+.logout {
+  fill: $blanco;
+  color: white;
+}
+
+header {
+  border-bottom: 1px solid $gris1;
+}
+
+.bar .container {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bar .container a:last-of-type {
+  margin-left: 10px;
+}
+
+.logo {
+  height: 100px;
+}
+
+/* Estilos Cover */
+
+.cover_container {
+  display: flex;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cover_img {
+  height: 400px;
+  background-image: url('../assets/img/Cover.jpg');
+  background-size: cover;
+}
+
+.cover_title,
+.cover_subtitle {
+  color: $blanco;
+}
+
+.cover_title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.cover_subtitle {
+  color: $blanco;
+  font-size: 1rem;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+/* Estilos de las Cajas o Cards */
+
+.card_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid;
+  border-color: $gris1;
+  border-radius: 5px;
+  height: 450px;
+  position: relative;
+  padding-top: 1rem;
+  overflow: hidden;
+}
+
+.card_image{
+  margin-left: 1rem;
+}
+
+.card_image img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.card_title {
+  color: $gris3;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
+.card_text {
+  color: $gris2;
+  margin: 0 1rem;
+}
+
+.card_button {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+
+}
+
+.card_button a:hover {
+  color: $blanco;
+}
+
+.card_footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid $gris1;
+  background:$gris0;
+}
+
+.card_price {
+ font-size: 1.3rem;
+ color: gris3;
+}
+
+.card_price:before{
+  content: '$ '
+}
+
+/* Estilos Login y Register */
+
+.error {
+  border-color: #dc3545;
+}
+
+/* Team */
+
+.team {
+  margin-bottom: 2rem;
+}
+
+.team .col-lg-4 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.team h5 {
+  margin: 1.4rem;
+  color: $gris3;
+}
+
+.team p {
+  color: $gris3;
+}
